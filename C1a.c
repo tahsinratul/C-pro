@@ -4,9 +4,7 @@
 /*
 This is a C program that implements the Bisection Method to find the root of the equation 
 
-        𝑓(𝑥)=𝑥3−𝑥−1=0
-
-        f(x)=x3−x−1=0 within a given interval [𝑎,𝑏]
+        𝑓(𝑥)=𝑥3−𝑥−1=0  within a given interval [𝑎,𝑏]
 
 How It Works:
 
