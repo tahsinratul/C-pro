@@ -1,5 +1,5 @@
 
-// Write a program to find a real root of a given equation by bisection method
+//Write a program to find a real root of a given equation by bisection: x3-x-1=0
 
 #include<stdio.h>
 #include<math.h>
