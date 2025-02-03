@@ -23,13 +23,13 @@ int main()
     {
             printf("Enter the tolerance:\n");
             scanf("%f",&tol);
-                h-fabs(a-b);
+                h=fabs(a-b);
             printf("The ith iterative is\n");
             printf("ite.no\t\t\t x\n");
     for (i=1;h>tol;++i)
     {
         m=(a+b)/2;
-        h-fabs(m-a);
+        h=fabs(m-a);
     if(f(a)*f(m)>0)
         a=m;
     else
