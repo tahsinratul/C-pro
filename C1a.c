@@ -1,6 +1,43 @@
 
 //Write a program to find a real root of a given equation by bisection: x3-x-1=0
 
+/*
+This is a C program that implements the Bisection Method to find the root of the equation 
+
+        𝑓(𝑥)=𝑥3−𝑥−1=0
+
+        f(x)=x3−x−1=0 within a given interval [𝑎,𝑏]
+
+How It Works:
+
+        The user inputs the interval [𝑎,𝑏]
+
+The program checks:
+
+        1. If 𝑓(𝑎)×𝑓(𝑏)=0 , one or both of the endpoints are roots
+
+        2. If 𝑓(𝑎)×𝑓(𝑏)<0 , a root exists between 𝑎 and 𝑏 and the Bisection Method is applied
+
+        3. Otherwise, it prints that there may be no real root in the given interval
+
+If a root exists:
+
+        1. The user inputs a tolerance value.
+
+        2. The bisection method iterates:
+
+                1. Compute the midpoint 𝑚 = 𝑎+𝑏/2
+
+                2. Check the function value 𝑓(𝑚)
+
+                3. Update 𝑎 or 𝑏 based on the sign of 𝑓(𝑚)
+
+                4. Continue until the absolute difference between successive midpoints (h) is within the tolerance
+
+Finally, the approximate root and function value at the root are displayed
+
+*/ 
+
 #include<stdio.h>
 #include<math.h>
 int main()
