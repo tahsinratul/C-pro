@@ -1,5 +1,5 @@
 
-// Write a program to find a real root of a given equation by section method
+// Write a program to find a real root of a given equation by bisection method
 
 #include<stdio.h>
 #include<math.h>
