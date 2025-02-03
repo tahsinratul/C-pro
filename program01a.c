@@ -20,7 +20,7 @@ The program checks:
 
 If a root exists:
 
-        1. The user inputs a tolerance value.
+        1. The user inputs a tolerance value
 
         2. The bisection method iterates:
 
