@@ -1,10 +1,9 @@
-
-//Write a program to find a real root of a given equation by bisection method: x3-x-1=0
+//Write a program to find a real root of a given equation by false position method: x3-2x-5=0
 
 /*
-This is a C program that implements the Bisection Method to find the root of the equation 
+This is a C program that implements the false position method to find the root of the equation 
 
-        𝑓(𝑥)=𝑥3−𝑥−1=0  within a given interval [𝑎,𝑏]
+        𝑓(𝑥)=𝑥3−2𝑥−5=0  within a given interval [𝑎,𝑏]
 
 How It Works:
 
@@ -14,7 +13,7 @@ The program checks:
 
         1. If 𝑓(𝑎)×𝑓(𝑏)=0 , one or both of the endpoints are roots
 
-        2. If 𝑓(𝑎)×𝑓(𝑏)<0 , a root exists between 𝑎 and 𝑏 and the Bisection Method is applied
+        2. If 𝑓(𝑎)×𝑓(𝑏)<0 , a root exists between 𝑎 and 𝑏 and the false position Method is applied
 
         3. Otherwise, it prints that there may be no real root in the given interval
 
@@ -24,7 +23,7 @@ If a root exists:
 
         2. The bisection method iterates:
 
-                1. Compute the midpoint 𝑚 = 𝑎+𝑏/2
+                1. Compute the midpoint 𝑚 = a-(f(a)*(b-a)/(f(b)-f(a)))
 
                 2. Check the function value 𝑓(𝑚)
 
@@ -63,7 +62,7 @@ int main()
             printf("ite.no\t\t\t x\n");
     for (i=1;h>tol;++i)
     {
-        m=(a+b)/2;
+        m=a-(f(a)*(b-a)/(f(b)-f(a)));
         h=fabs(m-a);
     if(f(a)*f(m)>0)
         a=m;
@@ -80,5 +79,5 @@ int main()
     float f(float x)
 
 { 
-    return(pow(x,3)-x-1);
+    return(pow(x,3)-2*x-5);
 }
