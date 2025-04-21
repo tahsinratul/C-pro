@@ -1,3 +1,5 @@
+// Trapezoidal rules of integration
+
 #include<stdio.h>
 #include<math.h>
 int main()
